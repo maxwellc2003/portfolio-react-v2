@@ -3,8 +3,10 @@ import React from "react";
 const Home = () => {
   return (
     <main>
-      {/* Front Page */}
-      <div></div>
+      {/* Hero */}
+      <div class="hero">
+      
+      </div>
       {/* Skills Section */}
       <div></div>
       {/* Blog Featured Section */}

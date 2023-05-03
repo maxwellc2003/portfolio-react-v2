@@ -4,3 +4,49 @@ Crimson - #D72638
 Mint Cream - #F0F7EE
 Black Bean - #280003
 */
+
+/* Header */
+
+header {
+  background-color: #071e22;
+  color: #f0f7ee;
+}
+
+.header-name {
+  text-align: center;
+}
+
+.nav {
+  justify-content: space-evenly;
+}
+
+/* Footer */
+
+footer {
+  padding: auto auto;
+  background-color: #071e22;
+  color: #f0f7ee;
+}
+
+.footer-col {
+    text-align: center;
+}
+
+/* Hero */
+
+.hero {
+  min-height: 75vh;
+  background-color: #071e22;
+}
+
+/* Skills */
+
+/* Featured */
+
+/* Projects */
+
+/* Contact */
+
+/* Blog */
+
+/* About */
