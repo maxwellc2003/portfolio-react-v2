@@ -20,6 +20,30 @@ header {
   justify-content: space-evenly;
 }
 
+.nav-section {
+  color: #f0f7ee;
+  text-underline-offset: var(--offset, 0.3em);
+  text-decoration: #d72638 underline 0.25em;
+  transition: --offset 400ms, text-decoration-color 400ms;
+}
+
+.nav-section:hover,
+.nav-section:focus {
+  color: #f0f7ee;
+  --offset: 0.6em;
+}
+
+@supports not (background: paint(something)) {
+  .nav-section {
+    transition: text-underline-offset 400ms, text-decoration-color 400ms;
+  }
+
+  .nav-section:hover,
+  .nav-section:focus {
+    text-underline-offset: 0.6em;
+  }
+}
+
 /* Footer */
 
 footer {
@@ -29,14 +53,26 @@ footer {
 }
 
 .footer-col {
-    text-align: center;
+  text-align: center;
 }
 
 /* Hero */
 
 .hero {
-  min-height: 75vh;
+  min-height: 95vh;
   background-color: #071e22;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-intro {
+  font-size: x-large;
+  margin: auto 45% auto 10%;
+}
+
+.hero-intro h1 {
+font-size: 75px;
 }
 
 /* Skills */
