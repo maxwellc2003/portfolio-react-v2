@@ -15,7 +15,7 @@ function App() {
     <div className="App">
       <Router>
         <Helmet>
-          <title>Maxwell Colby | Jr. Developer</title>
+          <title>Maxwell Colby | Jr. Software Engineer</title>
           <meta name="description" content="Personal Porfolio" />
         </Helmet>
         <Header />

@@ -10,6 +10,7 @@ Black Bean - #280003
 header {
   background-color: #071e22;
   color: #f0f7ee;
+  padding: 10px;
 }
 
 .header-name {
@@ -50,16 +51,21 @@ footer {
   padding: auto auto;
   background-color: #071e22;
   color: #f0f7ee;
+  text-align: center;
 }
 
 .footer-col {
   text-align: center;
 }
 
+.footer-link {
+ color: #f0f7ee;
+}
+
 /* Hero */
 
-.hero {
-  min-height: 95vh;
+.hero-section {
+  min-height: 90vh;
   background-color: #071e22;
   display: flex;
   justify-content: center;
@@ -67,22 +73,45 @@ footer {
 }
 
 .hero-intro {
-  font-size: x-large;
   margin: auto 45% auto 10%;
 }
 
-.hero-intro h1 {
-font-size: 75px;
+.hero-intro h2 {
+  color:#d72638;
 }
 
-/* Skills */
+/* Skills Section */
 
-/* Featured */
+.skills-section {
+  margin: 0 10% 0 10%;
+  height: 500px;
+  color: #071e22;
+}
 
-/* Projects */
+/* Blog Section */
 
-/* Contact */
+.blog-section {
+  margin: 0 10% 0 10%;
+  height: 500px;
+  color: #071e22;
+}
 
-/* Blog */
+/* Projects Section */
 
-/* About */
+.projects-section {
+  margin: 0 10% 0 10%;
+  height: 500px;
+  color: #071e22;
+}
+
+/* Contact Section */
+
+.contact-section {
+  margin: 0 10% 0 10%;
+  height: 500px;
+  color: #071e22;
+}
+
+/* Blog Page */
+
+/* About Page */
