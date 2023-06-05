@@ -5,6 +5,10 @@ Mint Cream - #F0F7EE
 Black Bean - #280003
 */
 
+:root {
+  --bubble-size: 40px;
+}
+
 /* Header */
 
 header {
@@ -15,6 +19,10 @@ header {
 
 .header-name {
   text-align: center;
+}
+
+.header-name a {
+  color: #f0f7ee;
 }
 
 .nav {
@@ -59,7 +67,7 @@ footer {
 }
 
 .footer-link {
- color: #f0f7ee;
+  color: #f0f7ee;
 }
 
 /* Hero */
@@ -77,7 +85,188 @@ footer {
 }
 
 .hero-intro h2 {
-  color:#d72638;
+  color: #d72638;
+}
+
+/* First Bubble */
+.hero-section .bubble-1::before {
+  aspect-ratio: 1 / 1;
+  content: "";
+  position: absolute;
+  top: 83%;
+  left: 75%;
+  width: var(--bubble-size);
+  background-color: transparent; /* Replace with your desired bubble color */
+  border-radius: 50%;
+  animation: float 15s infinite; /* Adjust the animation duration as needed */
+  opacity: 0;
+  border: 2px solid #f0f7ee;
+  animation-delay: 1.5s;
+}
+
+/* Second Bubble */
+.hero-section .bubble-2::before {
+  aspect-ratio: 1 / 1;
+  content: "";
+  position: absolute;
+  top: 91%;
+  left: 15%;
+  width: var(--bubble-size);
+  background-color: transparent; /* Replace with your desired bubble color */
+  border-radius: 50%;
+  animation: float 15s infinite; /* Adjust the animation duration as needed */
+  opacity: 0;
+  border: 2px solid #f0f7ee;
+  animation-delay: 3s;
+}
+
+/* Third Bubble */
+.hero-section .bubble-3::before {
+  aspect-ratio: 1 / 1;
+  content: "";
+  position: absolute;
+  top: 81%;
+  left: 30%;
+  width: var(--bubble-size);
+  background-color: transparent; /* Replace with your desired bubble color */
+  border-radius: 50%;
+  animation: float 15s infinite; /* Adjust the animation duration as needed */
+  opacity: 0;
+  border: 2px solid #f0f7ee;
+  animation-delay: 4.5s;
+}
+
+/* Fourth Bubble */
+.hero-section .bubble-4::before {
+  aspect-ratio: 1 / 1;
+  content: "";
+  position: absolute;
+  top: 80%;
+  left: 80%;
+  width: var(--bubble-size);
+  background-color: transparent; /* Replace with your desired bubble color */
+  border-radius: 50%;
+  animation: float 15s infinite; /* Adjust the animation duration as needed */
+  opacity: 0;
+  border: 2px solid #f0f7ee;
+  animation-delay: 6s;
+}
+
+/* Fifth Bubble */
+.hero-section .bubble-5::before {
+  aspect-ratio: 1 / 1;
+  content: "";
+  position: absolute;
+  top: 89%;
+  left: 45%;
+  width: var(--bubble-size);
+  background-color: transparent; /* Replace with your desired bubble color */
+  border-radius: 50%;
+  animation: float 15s infinite; /* Adjust the animation duration as needed */
+  opacity: 0;
+  border: 2px solid #f0f7ee;
+  animation-delay: 7.5s;
+}
+
+/* Sixth Bubble */
+.hero-section .bubble-6::before {
+  aspect-ratio: 1 / 1;
+  content: "";
+  position: absolute;
+  top: 85%;
+  left: 35%;
+  width: var(--bubble-size);
+  background-color: transparent; /* Replace with your desired bubble color */
+  border-radius: 50%;
+  animation: float 15s infinite; /* Adjust the animation duration as needed */
+  opacity: 0;
+  border: 2px solid #f0f7ee;
+  animation-delay: 9s;
+}
+
+/* Seventh Bubble */
+.hero-section .bubble-7::before {
+  aspect-ratio: 1 / 1;
+  content: "";
+  position: absolute;
+  top: 82%;
+  left: 5%;
+  width: var(--bubble-size);
+  background-color: transparent; /* Replace with your desired bubble color */
+  border-radius: 50%;
+  animation: float 15s infinite; /* Adjust the animation duration as needed */
+  opacity: 0;
+  border: 2px solid #f0f7ee;
+  animation-delay: 10.5s;
+}
+
+/* Eighth Bubble */
+.hero-section .bubble-8::before {
+  aspect-ratio: 1 / 1;
+  content: "";
+  position: absolute;
+  top: 88%;
+  left: 65%;
+  width: var(--bubble-size);
+  background-color: transparent; /* Replace with your desired bubble color */
+  border-radius: 50%;
+  animation: float 15s infinite; /* Adjust the animation duration as needed */
+  opacity: 0;
+  border: 2px solid #f0f7ee;
+  animation-delay: 12s;
+}
+
+/* Ninth Bubble */
+.hero-section .bubble-9::before {
+  aspect-ratio: 1 / 1;
+  content: "";
+  position: absolute;
+  top: 94%;
+  left: 55%;
+  width: var(--bubble-size);
+  background-color: transparent; /* Replace with your desired bubble color */
+  border-radius: 50%;
+  animation: float 15s infinite; /* Adjust the animation duration as needed */
+  opacity: 0;
+  border: 2px solid #f0f7ee;
+  animation-delay: 13.5s;
+}
+
+/* Tenth Bubble */
+.hero-section .bubble-10::before {
+  aspect-ratio: 1 / 1;
+  content: "";
+  position: absolute;
+  top: 92%;
+  left: 90%;
+  width: var(--bubble-size);
+  background-color: transparent; /* Replace with your desired bubble color */
+  border-radius: 50%;
+  animation: float 15s infinite; /* Adjust the animation duration as needed */
+  opacity: 0;
+  border: 2px solid #f0f7ee;
+  animation-delay: 15s;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-100vh);
+    opacity: 1;
+  }
+  51% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 /* Skills Section */
@@ -86,6 +275,7 @@ footer {
   margin: 0 10% 0 10%;
   height: 500px;
   color: #071e22;
+  padding: 50px 0 25px 0;
 }
 
 /* Blog Section */
@@ -94,6 +284,7 @@ footer {
   margin: 0 10% 0 10%;
   height: 500px;
   color: #071e22;
+  padding: 25px 0 25px 0;
 }
 
 /* Projects Section */
@@ -102,6 +293,7 @@ footer {
   margin: 0 10% 0 10%;
   height: 500px;
   color: #071e22;
+  padding: 25px 0 25px 0;
 }
 
 /* Contact Section */
@@ -110,8 +302,17 @@ footer {
   margin: 0 10% 0 10%;
   height: 500px;
   color: #071e22;
+  padding: 25px 0 50px 0;
 }
 
 /* Blog Page */
 
 /* About Page */
+
+.about-page {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-right: 10%;
+  margin-left: 10%;
+  color: #071e22;
+}

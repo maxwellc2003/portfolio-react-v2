@@ -15,13 +15,17 @@ function App() {
     <div className="App">
       <Router>
         <Helmet>
-          <title>Maxwell Colby | Jr. Software Engineer</title>
+          <title>Maxwell Colby | Software Engineer</title>
           <meta name="description" content="Personal Porfolio" />
         </Helmet>
         <Header />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/blog" element={<Blog />} />
+          <Route
+            path="/"
+            element={<Home />}
+            title="Maxwell Colby | Software Engineer"
+          />
+          <Route path="/blog" element={<Blog />} title="Maxwell Colby | Blog" />
           <Route path="/about" element={<About />} />
         </Routes>
         <Footer />
